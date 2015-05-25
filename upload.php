@@ -15,7 +15,7 @@ if(isset($_FILES['file']))
 
 	$allowed = array('cpp', 'java', 'py');
 
-	if(in_array($file_ext, $allowed))
+	if($file_ext == "cpp");
 	{
 		if($file_error == 0)
 		{
