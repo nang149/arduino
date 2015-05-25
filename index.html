@@ -1,15 +1,26 @@
+<!doctype html>
 <html>
-<head>
-<title>File Uploading Form</title>
-</head>
-<body>
-<h3>File Upload:</h3>
-Select a file to upload: <br />
-<form action="upload.php" method="post"
-                        enctype="multipart/form-data">
-<input type="file" name="file" size="50" />
-<br />
-<input type="submit" value="Upload File" />
-</form>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>File Upload</title>
+
+		<SCRIPT Language=JavaScript>
+		  var loc = document.location.toString()
+		  var loclen = loc.length
+		  
+		  //The name of the default document
+		  var filename = "default.asp"     
+		  var filelen = filename.length
+		  
+		  loc = loc.substring(loclen - filelen, loclen)
+		  
+		  if (loc.toUpperCase() != filename.toUpperCase()) { 
+		    location.replace(filename) 
+		  }
+		</SCRIPT>
+		
+	</head>
+	<body>
+		
+	</body>
 </html>
