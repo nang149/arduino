@@ -1,32 +1,13 @@
-<?php
-if(isset($_FILES['file']))
-{
-	$file = $_FILES['file'];
-
-	//Properties
-	$file_name = $file['name'];
-	$file_tmp = $file['tmp_name'];
-	$file_size = $file['size'];
-	$file_error = $file['error'];
-
-	//file extension
-	$file_ext = explode('.', $file_name)
-	$file_ext = strtolower(end($file_ext));
-
-	$allowed = array('cpp', 'java', 'py');
-
-	if(in_array($file_ext, $allowed))
-	{
-		if($file_error == 0)
-		{
-			$file_name_new = uniqid('', true) . '.' . $file_ext;
-			$file_dest = 'uploads/' . $file_name_new;
-
-			if(move_uploaded_file($file_tmp, $file_destination))
-			{
-				echo "Successful Upload";
-			}
-		}
-	}
-
-}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>File Upload</title>
+	</head>
+	<body>
+		<form action= "upload.php" method="post" enctype= "multipart/form-data">
+			<input type="file" name="file">
+			<input type="submit" value= "upload">
+		</form>
+	</body>
+</html>
