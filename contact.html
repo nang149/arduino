@@ -1,145 +1,179 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
-  <head>
-    <meta charset="utf-8">
-    <title>Arduino Tutorial</title>
-    <link rel="icon" type="image/png" href="https://cdn.tutsplus.com/mac/uploads/2013/08/arduino400.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>|USACOHelp|</title>
+		<link rel="icon" type="image/png" href="Icons/favicon.png">
+		<meta name="description" content="My Personal Website">
 
-    <!-- Le styles -->
- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  
-     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"> </script>
-    <script src=<"https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cosmo/bootstrap.min.css"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<meta property="og:title" content="|USACOHelp|"/>
+		<meta property="og:description" content="USACO Help Website"/>
+		<meta property="og:image" content="http://michael153.github.io/usacohelp/Icons/favicon.png"/>
+		<meta name="keywords" content="michael153, michael wan, michaelwan, michaelwan2000, usacohelp, USACO, USACO Help">
 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen"> -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" media="screen">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-62873848-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">USACOHelp</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="problems.html">Problems</a></li>
+						<li><a href="learn.html">Learn</a></li>
+						<li><a href="#">Submit</a></li>
+						<li><a href="IRC.html">Chat</a></li>
+						<li class = "active"><a href="contact.html">Contact Us</a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-lg-12">
+					<!-- www.123contactform.com script begins here -->
+					<iframe allowTransparency="true" style="min-height:1600px; height:inherit; overflow:auto;" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="http://www.123contactform.com/my-contact-form-1495935.html">
+					<p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
+					</iframe>
+					<!-- Foxyform - free version -->
+					<!-- <a id="foxyform_embed_link_682730" href="http://www.foxyform.com/"></a>
+					<script type="text/javascript">
+						(function(d, t)
+						{
+							var g = d.createElement(t),
+							s = d.getElementsByTagName(t)[0];
+							g.src = "http://www.foxyform.com/js.php?id=682730&sec_hash=d854c20fad1&width=350px";
+							s.parentNode.insertBefore(g, s);
+						}(document, "script"));
+					</script> -->
+					<!-- <form class="form-horizontal">
+						<fieldset>
+							<legend>Questions and Comments</legend>
+							<div class = "form-group">
+								<label for="name" class= "col-lg-2 control-label">Name</label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="name" placeholder="Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="inputEmail" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="textArea" class="col-lg-2 control-label">Question or Comment</label>
+								<div class="col-lg-10">
+									<textarea class="form-control" rows="3" id="textArea"></textarea>
+									<span class="help-block">Please make sure this is respectful.</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label">Area of Residence</label>
+								<div class="col-lg-10">
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											United States
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Other
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="select" class="col-lg-2 control-label">Age</label>
+									<div class="col-lg-10">
+										<select class="form-control" id="select">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+											<option>7</option>
+											<option>8</option>
+											<option>9</option>
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+											<option>13</option>
+											<option>14</option>
+											<option>15</option>
+											<option>16</option>
+											<option>17</option>
+											<option>18</option>
+											<option>19</option>
+											<option>20</option>
+											<option>21</option>
+											<option>22</option>
+											<option>23</option>
+											<option>24</option>
+											<option>25</option>
+											<option>26</option>
+											<option>27</option>
+											<option>28</option>
+											<option>29</option>
+											<option>30</option>
+											<option>30+</option>
+										</select>
+										<br>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-lg-10 col-lg-offset-2">
+										<button type="submit" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</fieldset>
+					</form> -->
 
-    <link rel="stylesheet" type="text/css" href="./bootstrap.css">
+					<!-- Formkeep: requires money for extensive use -->
+					<!-- <form accept-charset="UTF-8" action="https://formkeep.com/f/67fc78905ab2" method="POST">
+						<input type="hidden" name="utf8" value="✓"><br>
+						<input type="email" name="email" placeholder="Your Email"><br>
+						<input type="text" name="name" placeholder="Your Name"><br>
+						<input type="url" name="url" placeholder="Your Website"><br>
+						<button type="submit">Submit</button>
+					</form> -->
 
-</head>        
-  <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Arduino Help</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="gs.html">Getting Started</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="ch.html">Code Help</a></li>
-            <li class="active"><a href="contact.html">Contact Us<span class="sr-only">(current)</span></a></li>
-          </ul>
-           <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    
-   <div class = "container">
-      <div class = "row">
-         <div class = "col-lg-12">
-            <form class="form-horizontal" action="forms.php" method="GET">
-                <fieldset>
-                  <legend>Questions and Comments</legend>
-                 <div class = "form-group">
-                    <label for="name" class= "col-lg-2 control-label">Name</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="textArea" class="col-lg-2 control-label">Question or Comment</label>
-                    <div class="col-lg-10">
-                      <textarea class="form-control" rows="3" id="textArea"></textarea>
-                      <span class="help-block">Please make sure this is respectful.</span>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">Area of Residence</label>
-                    <div class="col-lg-10">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                          United States
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Other
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="select" class="col-lg-2 control-label">Age</label>
-                    <div class="col-lg-10">
-                      <select class="form-control" id="select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                        <option>24</option>
-                        <option>25</option>
-                        <option>26</option>
-                        <option>27</option>
-                        <option>28</option>
-                        <option>29</option>
-                        <option>30</option>
-                        <option>30+</option>
-                      </select>
-                      <br>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-lg-10 col-lg-offset-2">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-        </div>
-      </body>
+					<!-- Working on using heroku + sendgrid -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
